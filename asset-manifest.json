@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Smarter-Parker/static/css/main.b84762e7.chunk.css",
+    "main.js": "/Smarter-Parker/static/js/main.e1a3d841.chunk.js",
+    "main.js.map": "/Smarter-Parker/static/js/main.e1a3d841.chunk.js.map",
+    "runtime-main.js": "/Smarter-Parker/static/js/runtime-main.dc1b379a.js",
+    "runtime-main.js.map": "/Smarter-Parker/static/js/runtime-main.dc1b379a.js.map",
+    "static/js/2.ab6b8e6f.chunk.js": "/Smarter-Parker/static/js/2.ab6b8e6f.chunk.js",
+    "static/js/2.ab6b8e6f.chunk.js.map": "/Smarter-Parker/static/js/2.ab6b8e6f.chunk.js.map",
+    "index.html": "/Smarter-Parker/index.html",
+    "precache-manifest.1ab0d87c406c665e693f28e207bed558.js": "/Smarter-Parker/precache-manifest.1ab0d87c406c665e693f28e207bed558.js",
+    "service-worker.js": "/Smarter-Parker/service-worker.js",
+    "static/css/main.b84762e7.chunk.css.map": "/Smarter-Parker/static/css/main.b84762e7.chunk.css.map",
+    "static/js/2.ab6b8e6f.chunk.js.LICENSE.txt": "/Smarter-Parker/static/js/2.ab6b8e6f.chunk.js.LICENSE.txt",
+    "static/media/Login.module.css": "/Smarter-Parker/static/media/bg-intro-mobile.3e78c71a.png",
+    "static/media/icon-calculator.svg": "/Smarter-Parker/static/media/icon-calculator.8e4a5574.svg",
+    "static/media/icon-karma.svg": "/Smarter-Parker/static/media/icon-karma.ae2dc13d.svg",
+    "static/media/icon-supervisor.svg": "/Smarter-Parker/static/media/icon-supervisor.8f7824b3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc1b379a.js",
+    "static/js/2.ab6b8e6f.chunk.js",
+    "static/css/main.b84762e7.chunk.css",
+    "static/js/main.e1a3d841.chunk.js"
+  ]
+}
