@@ -1,0 +1,203 @@
+.body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "message cards" "credits credits";
+  padding: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #ff7a7a;
+  background-image: url("../../assets/images/bg-intro-desktop.png");
+}
+
+.body .message {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: message;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.body .message h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.body .message p {
+  color: white;
+  font-size: 13px;
+}
+
+.body .cards {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: cards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.body .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 0px 5px 4px #666;
+          box-shadow: 0px 5px 4px #666;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body .cards .card .alerts {
+  display: none;
+  margin: 0;
+  margin-left: 30%;
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+.body .cards .card input {
+  margin: 10px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #b9b6d3;
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 5px;
+}
+
+.body .cards .card button {
+  margin: 10px;
+  height: 40px;
+  padding: 6px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+  background-color: #38cc8c;
+  border-radius: 5px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  border-bottom: 2px solid #2ba671;
+}
+
+.body .cards .card button:hover {
+  cursor: pointer;
+  background-color: #61d6a3;
+  border-color: #38cc8c;
+}
+
+.body .cards .card p {
+  font-size: 10px;
+  color: #b9b6d3;
+  text-align: center;
+}
+
+.body .cards .card p #TnC {
+  color: #ff7a7a;
+  font-weight: 700;
+}
+
+.body .cards .blue {
+  background-color: #6055a5;
+  padding: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.body .cards .blue p {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.body .cards .blue .sign {
+  padding: 10px;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.body .cards .blue .sign:hover {
+  background-color: #7e75b8;
+}
+
+.body footer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: credits;
+}
+
+@media (max-width: 700px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    margin: 0;
+    background-image: url("../../assets/images/bg-intro-mobile.png");
+  }
+  body .message {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .message h1 {
+    font-size: 24px;
+  }
+  body .message p {
+    font-size: 12px;
+    text-align: center;
+  }
+  body .cards {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .cards .card {
+    padding-bottom: 0;
+  }
+  body footer {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+/*# sourceMappingURL=Login.module.css.map */

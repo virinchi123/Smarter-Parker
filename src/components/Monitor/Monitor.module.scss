@@ -1,0 +1,150 @@
+#encompass{
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+body{
+    background-color: rgb(250,250,250);
+    margin: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color:hsl(234, 12%, 34%);
+    width: auto;
+    
+    #header1{
+        font-size: 1.2rem;
+        font-weight: 200;
+        margin: 5px;
+    }
+
+    #header2{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 5px;
+    }
+
+    #header3{
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: lighten(rgb(0,0,0),80%);
+        width:65vh;
+        margin: auto;
+    }
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1 fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "card1 card2 card4"
+    "card1 card3 card4";
+    align-items: center;
+    height: 70vh;
+    width: 920px;
+    box-sizing: border-box;
+    margin: auto;  
+}
+
+.card{
+    background-color: white;
+    border-radius: 3px;
+    border-top: 3px solid;
+    padding: 4px;
+    font-weight: normal;
+    color: hsl(229, 6%, 66%);
+    font-size: x-small;
+    margin: 5px;
+    box-shadow: 10px 5px 5px #eee;
+    box-sizing: border-box;
+    height: 200px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "paragraph"
+        "image";
+    text-align: left;
+
+    img{
+        display: grid;
+        margin: auto 10% auto auto;
+        grid-area: image;
+    }
+
+    .message{
+        grid-area: paragraph;
+        margin: 5px;
+
+
+        .checkin{
+            box-sizing: border-box;
+            padding: 2px;
+            background-color: gray;
+            width: 30%;
+            border-radius: 2px;
+            text-align: center;
+
+            p{
+                color: white;
+            }
+        }
+    }
+    .title{
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+        font-size: large;
+        margin:0px;
+    }
+}
+#card1{
+
+        border-color: hsl(180, 62%, 55%);
+        grid-area: card1;
+}
+
+#card2{
+        border-top: 3px solid hsl(0, 78%, 62%);
+        grid-area: card2;
+        align-self: center;
+}
+
+#card3{
+        border-color: hsl(34, 97%, 64%);
+        grid-area: card3;
+}
+
+#card4{
+        border-color: hsl(212, 86%, 64%);
+        grid-area: card4;
+        align-self: center;
+}
+
+
+@media (max-width: 375px){
+    #container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4";
+    height: auto;
+    width: auto;
+    align-self: center;
+    }
+    .card{
+        margin: 5px auto 5px auto;
+        align-self: center;
+    }
+    
+    body{
+        #header3{
+            width:70vw;
+        }
+    }
+}
